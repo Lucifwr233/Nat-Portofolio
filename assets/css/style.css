@@ -99,7 +99,26 @@ img {
 }
 
 #profile-header {
-    /* display: none; */
+    width: 350px;
+    height: 10cm;
+}
+
+@media (min-width: 360px) {
+  #profile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 0 auto; 
+  }
+
+  #profile-name, #profile-desc, #profile-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -128,6 +147,10 @@ img {
     display: none;
   }
 
+    #profile-name, #profile-desc, #profile-btn {
+    display: block;
+    text-align: left;
+  }
 }
 
 
